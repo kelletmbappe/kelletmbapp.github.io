@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .container {
+        width: 600px;
+        height: 400px;
+        margin-left: 220px;
+        margin-top: 80px;
+      }
+      .writeup{
+        width: 400px;
+        height: 200px;
+        margin-top: 10px;
+         font-family: sans-serif;
+         font-weight: bold;
+         text-align: center;
+         margin-left: 90px;
+      } 
+      .box-shadow {
+            width: 560px;
+            height: 290px;
+            border: 1 px solid red;
+            background-color: white;
+            color: white;
+            margin-left: 20px;
+            position: absolute;
+            top: 148px;
+            box-shadow: 0 5px 10px 0 rgb(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
+        }
+        input {
+            padding: 5px;
+            width: 190px;
+            margin-top: 10px;
+            margin-left: 180px;
+
+        }
+
+        .input-cnt {
+        display: flex;
+       } 
+       .input-cnt > input {
+         outline: none;
+          border: 1px solid  black;
+         
+       }
+       .input-cnt::placeholder, textarea::placeholder {
+         color: black;
+       }
+        .input-cnt:focus,  input:focus {
+            border: 2px solid green;
+            color: black;
+        }
+        .button {
+         width: 130px;
+         height: 30px;
+         margin-left: 36%;
+         margin-top: 20px;
+         padding-top: 8px;
+         border: 1px solid green;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         border-bottom-left-radius: 10px;
+         border-bottom-right-radius: 10px;
+         font-size: 17px;
+         font-family: sans-serif;
+         font-weight: bold;
+         background-color: green;
+         color: white;
+     }
+      #changenumber {
+          width: 180px;
+          color: green;
+          height: 40px;
+          margin-left: 360px;
+          font-family: sans-serif;
+          font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="writeup"> <center> We sent a 6 digital code to your SMS text message to help us know this number belong to you </center></div>
+   <div class="box-shadow">
+    <h2 style="color: black;"> <center> Enter 6 digital code</center></h2>
+    <form action="simple-page.php"> 
+        <div class="input-cnt">
+        <input type="text" name="code" placeholder="Enter 6 digital code">
+    
+    </div>
+     <br>
+        <div class="button"> <center> Signup </center></div>
+        <br> <br> <br> 
+        <div id="changenumber"> Change Mobile Number</div>
+   </div>
+</form>
+    </div>
+</body>
+</html>
